@@ -12,12 +12,20 @@
     Add hero
   </button>
 </div>
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{ hero.id }}">
-      <span class="badge">{{ hero.id }}</span>
-      <span id="name-style">{{ hero.name }}</span
-      ><button class="delete" title="delete hero" (click)="delete(hero)">x</button>
-    </a>
-  </li>
+
+<ul class="heroes container-fluid">
+  <div class="col">
+    <div class="row test">
+      <li *ngFor="let hero of heroes">
+        <a routerLink="/detail/{{ hero.id }}">
+          <span class="badge">{{ hero.id }}</span>
+          <span id="name-style">{{ hero.name }}</span>
+        </a>
+
+        <button class="delete" title="delete hero" (click)="delete(hero)">
+          x
+        </button>
+      </li>
+    </div>
+  </div>
 </ul>

@@ -74,11 +74,13 @@ h2 {
 button.delete {
   height: 68px;
   position: absolute;
+  right: -200px;
   top: -14px;
   background-color: white;
   color: #525252;
   padding: 1px 10px 3px 10px;
 }
+
 
 button.delete:hover {
   background-color: #336699;
@@ -93,3 +95,4 @@ label {
   margin-right: 50px;
   margin-left: 40px;
 }
+
