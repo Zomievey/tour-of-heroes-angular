@@ -1,0 +1,95 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.heroes li {
+  position: relative;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+.heroes li:hover {
+  left: 0.1em;
+}
+
+.heroes a {
+  font-size: 2em;
+  color: #333;
+  text-decoration: none;
+  background-color: #eee;
+  margin: 0.5em;
+  margin-right: 5px;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: max-content;
+}
+
+.heroes a:hover {
+  color: #336699;
+  background-color: #e6e6e6;
+}
+
+.heroes a:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: x-large;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  position: relative;
+  left: -4px;
+  top: -6px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: left;
+  margin-block-end: 3em;
+  border-radius: 4px 0 0 4px;
+}
+
+.add-button {
+  margin-left: 1em;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #336699;
+}
+
+button.delete {
+  height: 68px;
+  position: absolute;
+  top: -14px;
+  background-color: white;
+  color: #525252;
+  padding: 1px 10px 3px 10px;
+}
+
+button.delete:hover {
+  background-color: #336699;
+  color: white;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+#name-style {
+  margin-right: 50px;
+  margin-left: 40px;
+}

@@ -1,0 +1,14 @@
+<h2 id="dash-title">Top Heroes</h2>
+<h3 id="instructions">Click on a hero to get their details</h3>
+<div class="container-fluid">
+  <div class="grid">
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{ hero.id }}">
+      <div class="module hero">
+        <h4>{{ hero.name }}</h4>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<app-hero-search></app-hero-search>
